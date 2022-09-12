@@ -1,0 +1,25 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+img{
+    height: 200px;
+    width: 175px;
+}
+
+.pdt{
+    padding-left: 50%;
+    padding-top: 50%;
+    
+}
+button{
+    background-color:#62fcd3;
+    width: 41%;
+    height: 30%;
+    border: solid white;
+    border-radius: 25px;
+    
+}
+.fa-solid{
+    color:#88f788;
+   }
