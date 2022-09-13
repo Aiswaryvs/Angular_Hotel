@@ -44,5 +44,28 @@ getAllDishes(){
   
   
 }
+dishdetail(id:number){
+
+let token=localStorage.getItem("token")
+
+return fetch(`http://127.0.0.1:8000/mdishes/${id}/`, {
+  method: 'GET',
+  headers: {
+    'Content-type': 'application/json; charset=UTF-8',
+    'Authorization':'Token '+token
+  },
+})
+}
+dishreview(id:number){
+  let token=localStorage.getItem("token")
+
+return fetch(`http://127.0.0.1:8000/mdishes/${id}/get_reviews/`, {
+  method: 'GET',
+  headers: {
+    'Content-type': 'application/json; charset=UTF-8',
+    'Authorization':'Token '+token
+  },
+})
+}
 }
 

@@ -54,14 +54,14 @@
                             <p class="card-text">{{d.category}}</p>
                             <p class="card-text">{{d.price}}</p>
                             <button >Oder Now</button>
-                            <button class="ms-3" style="background-color: #6290fc;">More info</button>
+                            <button class="ms-3" style="background-color: #6290fc;" (click)="redirectToDishDetails(d.id)">More info</button>
                             <br><br>
-                            <p>Rating:<i class="fa-solid fa-star"></i>
+                            <!-- <p>Rating:<i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star"></i>
-                            </p>
+                            </p> -->
                         </div>
                     </div>
                </div>
