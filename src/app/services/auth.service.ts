@@ -67,5 +67,17 @@ return fetch(`http://127.0.0.1:8000/mdishes/${id}/get_reviews/`, {
   },
 })
 }
+addReview(data:any,id:number){
+  let token=localStorage.getItem("token")
+  return fetch(`http://127.0.0.1:8000/mdishes/${id}/add_reviews/`, {
+  method: 'POST',
+  body: JSON.stringify(data),
+  headers: {
+    'Content-type': 'application/json; charset=UTF-8',
+    'Authorization':'Token '+token
+
+  },
+})
+}
 }
 

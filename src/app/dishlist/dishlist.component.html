@@ -46,22 +46,16 @@
                 <div class="card mb-3" style="max-width: 540px;">
                     <div class="row g-0">
                         <div class="col-md-4 mt-3">
-                            <img src="{{d.image}}" alt="...">
+                            <img src="{{d?.image}}" alt="...">
                         </div>
                      <div class="col-md-8">
                             <div class="card-body">
-                            <h1 class="card-title">{{d.name}}</h1>
-                            <p class="card-text">{{d.category}}</p>
-                            <p class="card-text">{{d.price}}</p>
-                            <button >Oder Now</button>
+                            <h1 class="card-title">{{d?.name}}</h1>
+                            <p class="card-text">Category:{{d?.category}}</p>
+                            <p class="card-text">Price:{{d?.price}}</p><br>
+                            <button (click)="redirectToReview(d.id)" >Add Review</button>
                             <button class="ms-3" style="background-color: #6290fc;" (click)="redirectToDishDetails(d.id)">More info</button>
                             <br><br>
-                            <!-- <p>Rating:<i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                            </p> -->
                         </div>
                     </div>
                </div>

@@ -10,6 +10,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { HomeComponent } from './home/home.component';
 import { DishlistComponent } from './dishlist/dishlist.component';
 import { DishdetailsComponent } from './dishdetails/dishdetails.component';
+import { ReviewComponent } from './review/review.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { DishdetailsComponent } from './dishdetails/dishdetails.component';
     NavbarComponent,
     HomeComponent,
     DishlistComponent,
-    DishdetailsComponent
+    DishdetailsComponent,
+    ReviewComponent
   ],
   imports: [
     BrowserModule,

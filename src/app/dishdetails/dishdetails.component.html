@@ -1,5 +1,4 @@
-<p>dishdetails works!</p>
-<!-- CSS only -->
+
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 <div class="container">
     <div class="row">
@@ -12,9 +11,14 @@
                   <h5 class="card-title">{{details?.name}}</h5>
                 </div>
                 <ul class="list-group list-group-flush">
-                  <li class="list-group-item">{{details?.category}}</li>
-                  <li class="list-group-item">{{details?.price}}</li>
+                  <li class="list-group-item">category:{{details?.category}}</li>
+                  <li class="list-group-item">price:{{details?.price}}</li>
                   </ul>
+                  <div *ngFor="let re of reviews">
+                      <p>comment:{{re?.comment}}</p>
+                      <p>Rating:{{re?.rating}}</p>
+
+                  </div>
               </div>
         </div>
     </div>

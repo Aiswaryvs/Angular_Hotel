@@ -24,5 +24,9 @@ export class DishlistComponent implements OnInit {
     
 
   }
+  redirectToReview(id:number){
+    this.router.navigate(["dishes/review/",id])
+
+  }
 
 }

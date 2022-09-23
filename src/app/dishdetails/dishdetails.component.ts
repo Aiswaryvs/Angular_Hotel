@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {AuthService} from '../services/auth.service';
-import {ActivatedRoute} from '@angular/router'
+import {ActivatedRoute} from '@angular/router';
+import {FormGroup,FormControl} from '@angular/forms'
 
 
 @Component({
@@ -9,6 +10,10 @@ import {ActivatedRoute} from '@angular/router'
   styleUrls: ['./dishdetails.component.css']
 })
 export class DishdetailsComponent implements OnInit {
+
+
+  
+ 
   id:number=0
   details:any
   reviews:any=[] 
@@ -23,8 +28,11 @@ export class DishdetailsComponent implements OnInit {
   ngOnInit(): void {
     console.log(this.id);
     this.service.dishdetail(this.id).then(res=>res.json()).then(data=>this.details=data);
-    this.service.dishreview(this.id).then(res=>res.json()).then(data=>console.log(data));
+    this.service.dishreview(this.id).then(res=>res.json()).then(data=>this.reviews=data);
+    
+    
     
   }
+  
 
 }

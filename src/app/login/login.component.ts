@@ -29,6 +29,7 @@ authenticate(){
   
   if("token" in localStorage){
     this.router.navigate(['dishes'])
+    
 
   }
 
